@@ -61,6 +61,13 @@ return array(
         ),
         'factories' => array(
             'translator' => 'Zend\Mvc\Service\TranslatorServiceFactory',
+            'doctrine.cache.redis' => function ($sm) {
+                $cache = new \Doctrine\Common\Cache\RedisCache();
+                $redis = new \Redis();
+                $redis->connect('redis', 6379);
+                $cache->setRedis($redis);
+                return $cache;
+            },
         ),
     ),
     'translator' => array(
