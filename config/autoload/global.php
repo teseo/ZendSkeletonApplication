@@ -3,8 +3,8 @@ return array(
     'db' => array(
         'driver' => 'Pdo',
         'dsn' => 'mysql:dbname=zf;host=mysql56',
-        'username' => 'root',
-        'password' => 'mysql56secret',
+        'username' => 'admin',
+        'password' => 'lY2I36gN0R03',
         'driver_options' => array(
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'',
         ),
@@ -38,8 +38,8 @@ return array(
                 'params' => array(
                     'host'     => 'mysql56',
                     'port'     => '3306',
-                    'user'     => 'root',
-                    'password' => 'mysql56secret',
+                    'user'     => 'admin',
+                    'password' => 'lY2I36gN0R03',
                     'dbname'   => 'zf',
                 )
             )

@@ -16,8 +16,6 @@
     "require-dev": {
         "zendframework/zend-developer-tools": "dev-master",
         "bjyoungblood/bjy-profiler": "1.1.*",
-        "aist/aist-git-tools": "0.*",
-        "ocramius/ocra-service-manager": "2.1.*",
         "san/san-session-toolbar": "0.4.*",
         "snapshotpl/zf-snap-event-debugger": "1.0.*",
         "jhuet/zdt-logger-module": "0.*"
