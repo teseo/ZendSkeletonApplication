@@ -5,7 +5,7 @@
  */
 chdir(dirname(__DIR__));
 
-//error_reporting(0);
+error_reporting(0);
 
 
 // Decline static file requests back to the PHP built-in webserver
