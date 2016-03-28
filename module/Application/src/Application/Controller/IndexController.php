@@ -19,11 +19,21 @@ class IndexController extends AbstractActionController
     public function indexAction()
     {
         $em = $this->getServiceLocator()->get('zfcuser_doctrine_em');
-      //  $em->remove($user1);
-       // $em->flush();                         // Hit database to update the row and update cache
-        /*$user1->setUsername('pepilla-' . time());
-     //   $em->getCache()->evictEntity('Application\Entity\User', 2);
+          $user1  = $em->find('Application\Entity\User', 1);
+          \Zend\Debug\Debug::dump($user1);
+/*        $user1->setUsername('pepilla-' . time());
+        $em->getCache()->evictEntity('Application\Entity\User', 1);
         $em->persist($user1);
+        $em->flush();
+        $user1->setUsername('pepilla-' . time());
+        $em->getCache()->evictEntity('Application\Entity\User', 1);
+        $em->persist($user1);
+        $em->flush();
+        $user1->setUsername('pepilla-a' . time());
+        $em->getCache()->evictEntity('Application\Entity\User', 1);
+        $em->persist($user1);
+        $em->flush();     */                    // Hit database to update the row and update cache
+
 
 
         /** @var User $userMapper */

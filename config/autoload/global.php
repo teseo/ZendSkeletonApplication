@@ -1,5 +1,14 @@
 <?php
 return array(
+    'db' => array(
+        'driver' => 'Pdo',
+        'dsn' => 'mysql:dbname=zf;host=mysql56',
+        'username' => 'root',
+        'password' => 'mysql56secret',
+        'driver_options' => array(
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'',
+        ),
+    ),
     'doctrine' => array(
 
         /***** enabling the memcache ****/

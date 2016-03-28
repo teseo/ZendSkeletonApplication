@@ -11,7 +11,15 @@
         "php": ">=5.5",
         "zendframework/zendframework": "~2.5",
         "zf-commons/zfc-user": "1.4.*",
-        "zf-commons/zfc-user-doctrine-orm": "1.0.*",
-        "zendframework/zend-developer-tools": "1.0.0-RC1"
+        "zf-commons/zfc-user-doctrine-orm": "1.0.*"
+    },
+    "require-dev": {
+        "zendframework/zend-developer-tools": "dev-master",
+        "bjyoungblood/bjy-profiler": "1.1.*",
+        "aist/aist-git-tools": "0.*",
+        "ocramius/ocra-service-manager": "2.1.*",
+        "san/san-session-toolbar": "0.4.*",
+        "snapshotpl/zf-snap-event-debugger": "1.0.*",
+        "jhuet/zdt-logger-module": "0.*"
     }
 }
