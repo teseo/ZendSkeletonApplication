@@ -85,6 +85,21 @@ return array(
             'Application\Controller\Index' => Controller\IndexController::class
         ),
     ),
+    'doctrine' => array(
+        'driver' => array(
+            'ApplicationEntities' => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'cache' => 'array',
+                'paths' => array( __DIR__ . '/../src/'.__NAMESPACE__.'/Entity' )
+            ),
+            'orm_default' => array(
+                'drivers' => array(
+                    'Application\Entity' => 'ApplicationEntities',
+                ),
+                
+            ),
+        ),
+    ),
     'view_manager' => array(
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
