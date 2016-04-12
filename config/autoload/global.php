@@ -11,7 +11,7 @@ return array(
     ),
     'doctrine' => array(
 
-        /***** enabling the memcache ****/
+        /***** enabling the cache ****/
         'configuration' => array(
             'orm_default' => array(
                 'result_cache'      => 'redis',
